@@ -1,0 +1,13 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: tjokiel/aosp:9
+    steps:
+      - checkout
+      - run:
+          name: "Sync"
+          command: ./clone.sh
+      - run:
+          name: "Build"
+          command: ./build.sh
