@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: "Build"
-          command: ./build_rom.sh
+          command: bash build_rom.sh
