@@ -1,5 +1,5 @@
 # sync rom
-repo init --depth=1 --no-repo-verify -u repo init -u https://github.com/Project-Elixir/manifest -b Tiramisu -g default,-mips,-darwin,-notdefault
+repo init -u https://github.com/Project-Elixir/manifest -b Tiramisu -g default,-mips,-darwin,-notdefault
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 30 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 8
 repo sync -j1 --fail-fast
 
